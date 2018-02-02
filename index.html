@@ -12,6 +12,7 @@
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="font-awesome-4.4.0/css/font-awesome.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel|Cardo|Open+Sans|Ovo" rel="stylesheet">
 	<link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
 	<style type="text/css">
 	@media (min-width:992px) {
@@ -25,6 +26,23 @@
 			width: 750px;
 		}
 	}
+	body {
+	font-family: 'Ovo', serif;
+	font-size: 12pt;
+	}
+	.panel-title {
+	font-family: 'Cinzel', serif;
+	font-size: 17pt;
+	}
+	.panel {
+	border-color: #ffffff;
+	}
+	.panel-default > .panel-heading {
+	background-color: #ffffff;
+	}
+	.list-group-item {
+	border: 0px;
+	}
 	</style>
 </head>
 <body>
@@ -32,25 +50,29 @@
 		<h2 class="text-center">
 			<img src="./me.png" class="img-circle" alt="Cinque Terre" width="150px">
 		</h2>
-		<h2 class="text-center">
+		<h2 class="text-center" style="font-family: 'Cinzel', serif;">
 			Sainbayar Sukhbaatar
 		</h2>
 		<p class="text-center lead">
 			I am a PhD student working with Rob Fergus and Yann LeCun at Department of Computer Science in New York University. My research interests are deep learning, neuroscience and reinforcement learning.
 			<br/>
-			<br/>
+			<!--<br/>
 			<a class="btn btn-social-icon btn-github" href="http://github.com/tesatory" target="_blank">
 				<i class="fa fa-github"></i>
 			</a>
 			<a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/pub/sainbayar-sukhbaatar/59/332/589" target="_blank">
 				<i class="fa fa-linkedin"></i>
-			</a>
+			</a>-->
 		</p>
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">Publications</h3>
 			</div>
 			<ul class="list-group">
+				<li class="list-group-item">
+				  <a href="https://scholar.google.com/citations?user=ri1sE34AAAAJ&hl=en" target="_blank">Google Scholar profile</a> | 
+				  <a href="https://www.semanticscholar.org/author/Sainbayar-Sukhbaatar/2265067" target="_blank">Semantic Scholar profile</a>
+				</li>
 				<li class="list-group-item">
 					S. Sukhbaatar, Z. Lin, I. Kostrikov, G. Synnaeve, A. Szlam, R. Fergus<br/>
 					<span class="text-primary"><a href="https://arxiv.org/abs/1703.05407" target="_blank">Intrinsic Motivation and Automatic Curricula via Asymmetric Self-Play.</a></span><br/>
@@ -107,10 +129,6 @@
 					<a class="label label-primary" href="https://youtu.be/aGLBFuennXI" target="_blank">video</a>
 				</li>
 			</ul>
-			<div class="panel-footer">
-				<a href="https://scholar.google.com/citations?user=ri1sE34AAAAJ&hl=en" target="_blank">Google Scholar profile</a> | 
-				<a href="https://www.semanticscholar.org/author/Sainbayar-Sukhbaatar/2265067" target="_blank">Semantic Scholar profile</a>
-			</div>
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading">
@@ -194,12 +212,14 @@
 		</div>
 	</div>
 	<footer style="background-color:#f5f5f5;width:100%;padding-bottom:10px;">
-		<div class="container" style="text-align:center;">
-			<h4> Contact me</h4>
+		<div class="container" style="text-align:left;">
+		  <br/>
+			<h4 style="font-family: 'Cinzel', serif;"> Contact me</h4>
 			<p>
 				<strong>Email:</strong> sainbar "at" cs.nyu.edu &nbsp;&nbsp;&nbsp;&nbsp; <br/>
 				<strong>Address:</strong> Room 508, 60 5th Ave, New York, NY 10011      
 			</p>
+			<br/>
 		</div>
 	</footer>
     <!-- Bootstrap core JavaScript
