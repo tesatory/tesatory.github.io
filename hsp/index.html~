@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Sainbayar Sukhbaatar personal website">
+	<meta name="author" content="Sainbayar Sukhbaatar">
+
+	<title>Hierarchical Self-Play</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="bootstrap-social/bootstrap-social.css">
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1 class="text-center">
+			Learning Goal Embeddings via Self-Play for Hierarchical Reinforcement Learning<br/>
+			<small>Sainbayar Sukhbaatar, Emily Denton, Arthur Szlam, Rob Fergus
+</small>
+            <br/>
+            <br/>
+            <img src="model.png">
+		</h1>
+		<hr/>
+		<p class="lead">
+		  In hierarchical reinforcement learning a major challenge is determining appropriate low-level policies. We propose an unsupervised learning scheme, based on asymmetric self-play from Sukhbaatar et al. (2018), that automatically learns a good representation of sub-goals in the environment and a low-level policy that can execute them. A high-level policy can then direct the lower one by generating a sequence of continuous sub-goal vectors. We evaluate our model using Mazebase and Mujoco environments, including the challenging AntGather task. Visualizations of the sub-goal embeddings reveal a logical decomposition of tasks within the environment. Quantitatively, our approach obtains compelling performance gains over non-hierarchical approaches.
+		</p>
+		<p class="text-center">
+			<a class="btn btn-primary btn-lg" href="https://arxiv.org/pdf/1703.05407" target="_blank">PDF</a>
+			<a class="btn btn-success btn-lg" href="selfplay_poster.pdf" target="_blank">Poster</a>
+			<a class="btn btn-default btn-lg" href="https://github.com/tesatory/selfplay" target="_blank">Code</a>
+			<a class="btn btn-info btn-lg" href="https://youtu.be/5dNAnCYBFN4" target="_blank">Talk</a>
+		</p>
+		<hr/>
+		<div class="text-center">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/EHHiFwStqaA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		</div>
+		<hr/>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- google analyitcs -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37493933-2', 'auto');
+    ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
